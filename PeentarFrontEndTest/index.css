@@ -1,0 +1,472 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* general information */
+
+body {
+    background-color: whitesmoke;
+}
+
+
+
+
+.bgCover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: -600px;
+    right: 0px;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    padding-top: 40px;
+    padding-right: 40px;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.menu-list ul li {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-list ul li img {
+    width: 34px;
+    height: 34px;
+}
+
+#active1 {
+    border-bottom: 3px solid whitesmoke;
+    padding: 10px 28px;
+    transition: 0.5s ;
+}
+
+#active2, #active3, #active4 {
+    border-bottom: 3px solid transparent;
+    padding: 10px 28px;
+    transition: 0.5s ;
+}
+
+/* general information */
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+#general-information {
+   width: 500px;
+   height: 500%;
+   margin: 200px auto 40px 150px;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+}
+
+.inputBox{
+    width: 450px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color:whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-family: 'Montserrat';
+    outline: none;
+    -webkit-appearance: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.selection {
+    width: 470px;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gender-selection {
+    position: relative;
+}
+
+#selectGender {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    outline: none;
+    margin-right: 25px;
+    -webkit-appearance: button;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gender-selection i {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    color: gray;
+}
+
+.age-selection {
+    position: relative;
+}
+
+#age {
+    width: 64px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    outline: none;
+    padding-right: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#generalInformationButton {
+    width: 339px;
+    height: 40px;
+    background-color: rgb(85, 215, 255);
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    color: white;
+    outline: none;
+    margin: 0px auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* contact section */
+
+#page2 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: none;
+    flex-flow: column;
+}
+
+#contact {
+    width: 500px;
+    height: 500%;
+    margin: 200px auto 40px 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+ }
+
+#contact input[type='number'] {
+    -webkit-appearance: textfield;
+}
+
+#contact input::-webkit-outer-spin-button,
+#contact input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#contactButton {
+    width: 339px;
+    height: 40px;
+    background-color: rgb(85, 215, 255);
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    color: white;
+    outline: none;
+    margin: 0px auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* password section */
+
+#page3 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: none;
+    flex-flow: column;
+}
+
+#password {
+    width: 500px;
+    height: 500%;
+    margin: 200px auto 40px 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#PasswordButton {
+    width: 345px;
+    height: 40px;
+    background-color: rgb(85, 215, 255);
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    color: white;
+    outline: none;
+    margin: 0px auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 0px auto 0px 230px;
+}
+
+#warning {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 20px auto 0px 300px;
+    font-family: 'SF Pro Text';
+    font-size: 12px;
+    color: red;
+}
+ 
+/* complete section */
+
+#page4 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: none;
+    flex-flow: column;
+}
+
+.complete-section {
+    width: 400px;
+    height: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.complete-section img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.complete-section h1 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.complete-section p {
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 760px){
+    .bgCover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: -1;
+    }
+
+    header {
+        width: 100%;
+        height: 45px;
+        background-color: transparent;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    #active1 {
+        border-bottom: 3px solid whitesmoke;
+        padding: 10px 28px;
+    }
+    
+    #active2, #active3, #active4 {
+        border-bottom: 3px solid transparent;
+        padding: 10px 28px;
+    }
+    
+    .inputBox{
+        width: 320px;
+        height: 40px;
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+        border: 0px;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-family: 'Montserrat';
+        outline: none;
+        -webkit-appearance: none;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #general-information {
+        width: 375px;
+        height: 500%;
+        margin: 40px auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    #contact {
+        width: 375px;
+        height: 500%;
+        margin: 40px auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #password {
+        width: 375px;
+        height: 100%;
+        margin: 40px auto 20px auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #PasswordButton {
+        width: 339px;
+        height: 40px;
+        background-color: rgb(85, 215, 255);
+        border: 0px;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        color: white;
+        outline: none;
+        margin: 0px auto;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+        margin-top: 0px;
+    }
+
+    #selectGender {
+        width: 220px;
+        height: 40px;
+        margin-bottom: 20px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        border: 0px;
+        padding-left: 10px;
+        font-family: 'Montserrat';
+        outline: none;
+        margin-right: 25px;
+        -webkit-appearance: button;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+    .selection {
+        width: 340px;
+        height: auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #warning {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        margin: 20px auto;
+        font-family: 'SF Pro Text';
+        font-size: 12px;
+        color: red;
+    }
+
+    .complete-section {
+        width: 375px;
+        height: 100%;
+        margin: 40px auto 20px auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .complete-section img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .complete-section h1 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        color: orange;
+        margin-bottom: 15px;
+    }
+    
+    .complete-section p {
+        font-family: 'Montserrat';
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+  
+  

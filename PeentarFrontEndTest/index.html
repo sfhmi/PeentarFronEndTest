@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../PeentarFrontEndTest/index.css">
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bgCover"><img src="../PeentarFrontEndTest/assets/bg.svg" alt=""></div>
+    <header>
+        <div class="menu-list">
+            <ul>
+                <li><img src="../PeentarFrontEndTest/assets/1.svg" id="active1"></li>
+                <li><img src="../PeentarFrontEndTest/assets/2.svg" id="active2"></li>
+                <li><img src="../PeentarFrontEndTest/assets/3.svg" id="active3"></li>
+                <li><img src="../PeentarFrontEndTest/assets/4.svg" id="active4"></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+    <!-- general information section -->
+        <section id="page1">
+        <form id="general-information">
+            <input type="text" class="inputBox" id="firstName" placeholder="First Name">
+            <input type="text" class="inputBox" id="lastName" placeholder="Last Name">
+            <div class="selection">
+                <div class="gender-selection">
+                    <select name="Gender" id="selectGender">
+                        <option>Select Your Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+              <i class="fas fa-angle-down"></i>
+            </div>
+                <div class="age-selection">
+                    <input type="number" id="age" name="age" min="1" max="50" placeholder="Age">
+                </div>
+            </div>
+            <button type="submit" class="button" id="generalInformationButton" onclick="goContact()">Next</button>
+        </form>
+    </section>
+
+    <!-- contact section -->
+    <section id="page2">
+        <form action=""  id="contact">
+            <input type="email" class="inputBox" id="inputEmail" placeholder="email">
+            <input type="number" class="inputBox" id="inputNumber" placeholder="Phone Number">
+            <button type="submit" class="button" id="contactButton" onclick="goPassword()">Next</button>
+        </form>
+    </section>
+    
+    <!-- set password section -->
+    <section id="page3">
+            <form id="password" name="password">
+                <input type="password" name="pass" class="inputBox" id="inputPassword" placeholder="Password" value="">
+                <input type="password" name="confirmPass" class="inputBox" id="repeatPassword" placeholder="Confirm Password" value="">
+            </form>
+            <button type="submit" class="button" id="PasswordButton" onclick="complete()" value="submit">Next</button>
+            <div id="warning"></div>
+        </section>
+
+        <!-- complete section -->
+        <section id="page4">
+            <div class="complete-section">
+               <img src="../PeentarFrontEndTest/assets/ic_move_to_inbox_24px.svg" alt="">
+                <h1>Congratulation</h1>
+                <p>congratulations, you successfully registered</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../PeentarFrontEndTest/index.js"></script>
+</body>
+</html>

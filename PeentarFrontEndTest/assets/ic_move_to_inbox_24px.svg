@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 205 205">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#ic_move_to_inbox_24px);
+      }
+    </style>
+    <filter id="ic_move_to_inbox_24px" x="0" y="0" width="205" height="205" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="ic_move_to_inbox_24px-2" data-name="ic_move_to_inbox_24px" class="cls-1" d="M169.222,3H23.674A20.6,20.6,0,0,0,3.1,23.778L3,169.222A20.684,20.684,0,0,0,23.674,190H169.222A20.839,20.839,0,0,0,190,169.222V23.778A20.839,20.839,0,0,0,169.222,3Zm0,124.667H127.667a31.167,31.167,0,1,1-62.333,0H23.674V23.778H169.222ZM138.056,75.722H117.278V44.556H75.722V75.722H54.944L96.5,117.278Z" transform="translate(6 3)"/>
+  </g>
+</svg>
